@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Projeto Git Hub Api
+Project using GitHub API to show a dashboard with some information of the repositories that the user searches.
+React JS
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
