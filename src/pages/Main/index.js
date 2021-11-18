@@ -29,12 +29,11 @@ const Main = () =>{
 
     const handleSubmit = useCallback(e => {
         e.preventDefault();
-
         async function submit(){
             setLoading(true)
             setAlert(null)
-
             try{
+                setNewRepo(newRepo.trimEnd())
                 if(newRepo === ''){
                     throw new Error('Indique um repositório')
                 }
@@ -64,7 +63,8 @@ const Main = () =>{
     }, [newRepo, repositorios]);
 
     function handleInputChange(e){
-        setNewRepo(e.target.value)
+        let repo = e.target.value.trimEnd()
+        setNewRepo(repo)
         setAlert(null)
     }
 
@@ -79,7 +79,7 @@ const Main = () =>{
                 <FaGithub size={25} />
                 Meus repositórios 
             </h1>
-
+ 
             <Form onSubmit={e => handleSubmit(e)} error={alert} >
                 <input 
                 type='text' 
