@@ -1,4 +1,4 @@
-# Projeto Git Hub Api
+# GitHub Api Project
 Project using GitHub API to show a dashboard with some information of the repositories that the user searches.
 React JS
 
